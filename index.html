@@ -16,9 +16,9 @@
             <h1 class="match-result">tic tac toe</h1>
         </div>
         <div class="board">
-            <div class="cell" id="cell-0">X</div>
-            <div class="cell" id="cell-1">X</div>
-            <div class="cell" id="cell-2">O</div>
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
             <div class="cell" id="cell-3"></div>
             <div class="cell" id="cell-4"></div>
             <div class="cell" id="cell-5"></div>
@@ -36,6 +36,23 @@
                 </button>
             </div>
             <button class="edit-names">Edit names</button>
+        </div>
+        <div class="modal" id="name-modal">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <h2>Edit Names</h2>
+                    <span class="close-btn">&times;</span>
+                </div>
+                <form id="name-form">
+                    <label for="player1-name">Player 1 Name:</label>
+                    <input type="text" id="player1-name" placeholder="Enter Player 1's name" required>
+                    <br>
+                    <label for="player2-name">Player 2 Name:</label>
+                    <input type="text" id="player2-name" placeholder="Enter Player 2's name" required>
+                    <br>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="src/script.js"></script>
