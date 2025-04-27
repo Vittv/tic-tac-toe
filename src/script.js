@@ -180,6 +180,10 @@ const GameController = (() => {
             }
         });
 
+        player1Input.addEventListener("focus", () => {
+            player1Input.select();
+        })
+
         player2Input.addEventListener("focus", () => {
             player2Input.select();
         });
